@@ -1,0 +1,1 @@
+sudo rocker --nvidia --x11 --volume f1tenth_ws/src:/sim_ws/src --volume f1tenth_gym_ros:/sim_ws/src/f1tenth_gym_ros -- f1tenth_gym_ros
