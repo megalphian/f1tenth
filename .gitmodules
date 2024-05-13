@@ -3,4 +3,4 @@
 	url = git@github.com:f1tenth/f1tenth_gym_ros.git
 [submodule "f1tenth_ws"]
 	path = f1tenth_ws
-	url = git@github.com:CL2-UWaterloo/f1tenth_ws.git
+	url = git@github.com:megalphian/f1tenth_ws.git
