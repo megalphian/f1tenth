@@ -31,16 +31,6 @@ RUN apt-get update --fix-missing && \
                        libeigen3-dev \
                        tmux \
                        ros-humble-slam-toolbox \
-                       ros-humble-ackermann-msgs 
+                       ros-humble-ackermann-msgs \
+                       rox-humble-robot-localization
 RUN apt-get -y dist-upgrade
-
-RUN pip3 install --upgrade pip
-RUN pip install cython
-
-ENV NVIDIA_VISIBLE_DEVICES=all
-ENV NVIDIA_DRIVER_CAPABILITIES=all
-
-RUN mkdir /range_libc
-COPY range_libc /range_libc
-# RUN cd /range_libc/pywrapper && \
-#     ./compile_with_cuda.sh
