@@ -1,6 +1,6 @@
 # <path-to-ws> is the path to the workspace directory. Use it before the f1tenth volume mount.
 # export CL2_WS_DIR=<path-to-ws>
-export CL2_WS_DIR=/home/m5ramesh/git/f1tenth/f1tenth_ws
+export CL2_WS_DIR=$(dirname "$0")/../f1tenth_ws
 
 xhost local:root
 
