@@ -4,3 +4,6 @@
 [submodule "f1tenth_ws"]
 	path = f1tenth_ws
 	url = git@github.com:megalphian/f1tenth_ws.git
+[submodule "range_libc"]
+	path = range_libc
+	url = https://github.com/f1tenth/range_libc
