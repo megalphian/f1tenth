@@ -32,5 +32,5 @@ RUN apt-get update --fix-missing && \
                        tmux \
                        ros-humble-slam-toolbox \
                        ros-humble-ackermann-msgs \
-                       rox-humble-robot-localization
+                       ros-humble-robot-localization
 RUN apt-get -y dist-upgrade
