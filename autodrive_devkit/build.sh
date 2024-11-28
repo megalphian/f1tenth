@@ -1,1 +1,1 @@
-docker build -t autodriveecosystem/autodrive_f1tenth_api:2024-cdc-cl2-v2 . -f Dockerfile
+docker build --pull --no-cache -t autodriveecosystem/autodrive_f1tenth_api:2024-cdc-cl2-v2 . -f Dockerfile
