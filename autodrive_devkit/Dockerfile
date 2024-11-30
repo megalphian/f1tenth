@@ -38,6 +38,10 @@ RUN apt-get -y dist-upgrade
 COPY f1tenth_ws/src/sim_league_bridge /home/autodrive_devkit/src/sim_league_bridge
 COPY f1tenth_ws/src/kinematic-icp /home/autodrive_devkit/src/kinematic-icp
 
+RUN /bin/bash -c "source /opt/ros/humble/setup.bash && \
+                 cd /home/autodrive_devkit && \
+                 colcon build"
+
 COPY entrypoint.sh /home/autodrive_devkit/
 RUN chmod +x /home/autodrive_devkit/entrypoint.sh
 
